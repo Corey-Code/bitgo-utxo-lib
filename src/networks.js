@@ -34,7 +34,8 @@ module.exports = {
       // 4: 0x76b809bb,
       4: 0x00
     },
-    coin: coins.ZEC
+    coin: coins.ZEC,
+    hashFunctions: hashFunctions
   },
   veruscoin: {
     messagePrefix: '\x18VerusCoin Signed Message:\n',
@@ -54,7 +55,8 @@ module.exports = {
       3: 0x5ba81b19,
       4: 0x76b809bb
     },
-    coin: coins.ZEC
+    coin: coins.ZEC,
+    hashFunctions: hashFunctions
   },
   bitcoin: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
