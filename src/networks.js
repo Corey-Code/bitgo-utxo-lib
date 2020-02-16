@@ -559,7 +559,7 @@ module.exports = {
   },
   '3dcoin': {
     messagePrefix: '\x18Verus Signed Message:\n',
-    bech32: 'ltc',
+    bech32: 'bc',
     bip32: {
       public: 0x0488b21e,
       private: 0x0488ade4
@@ -567,7 +567,7 @@ module.exports = {
     pubKeyHash: 0x17,
     scriptHash: 0x82,
     wif: 0x08,
-    coin: coins.BTC,
+    coin: coins.ZEC,
     hashFunctions: hashFunctions
   },
   ritocoin: {
