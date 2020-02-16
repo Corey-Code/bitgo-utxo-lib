@@ -543,6 +543,46 @@ module.exports = {
     coin: coins.BTC,	
     hashFunctions: hashFunctions	
   },
+  anonymous: {
+    messagePrefix: '\x18Anon Signed Message:\n',
+    bech32: 'btg',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x0582,
+    scriptHash: 0x5389,
+    wif: 0x80,
+    coin: coins.BTG,
+    forkId: 0x2a,
+    hashFunctions: hashFunctions
+  },
+  '3dcoin': {
+    messagePrefix: '\x18Verus Signed Message:\n',
+    bech32: 'ltc',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x17,
+    scriptHash: 0x82,
+    wif: 0x08,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
+  ritocoin: {
+    messagePrefix: "\x18RitoCoin Signed Message: \n",
+    bech32: "rvn", // not known
+    bip32: {
+      public:  0x0534e7ca,
+      private: 0x05347eac,
+    },
+    pubKeyHash: 0x19,
+    scriptHash: 0x69,
+    wif: 0x8b,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   /* btcp: { // TODO
     messagePrefix: '\x18Bitcoin Private Signed Message:\n',
     bech32: 'btg',
@@ -552,20 +592,6 @@ module.exports = {
     },
     pubKeyHash: 0x1325,
     scriptHash: 0x13af,
-    wif: 0x80,
-    coin: coins.BTG,
-    forkId: 0x2a,
-    hashFunctions: hashFunctions
-  },
-  anon: { // TODO
-    messagePrefix: '\x18Anon Signed Message:\n',
-    bech32: 'btg',
-    bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4
-    },
-    pubKeyHash: 0x0582,
-    scriptHash: 0x5389,
     wif: 0x80,
     coin: coins.BTG,
     forkId: 0x2a,
