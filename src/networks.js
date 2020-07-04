@@ -534,7 +534,8 @@ module.exports = {
     hashFunctions: hashFunctions	
   },	
   digibyte: {	
-    messagePrefix: '\x19Digibyte Signed Message:\n',	
+    messagePrefix: '\x19Digibyte Signed Message:\n',
+    bech32: "dgb",
     bip32: {	
       public: 0x0488b21e,	
       private: 0x0488ade4	
