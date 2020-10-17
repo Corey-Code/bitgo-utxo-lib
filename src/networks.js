@@ -257,6 +257,19 @@ module.exports = {
     coin: coins.ZEC,
     hashFunctions: hashFunctions
   },
+  pivx: {
+    messagePrefix: "\x18PIVX Signed Message:\n",
+    bech32: "bc",
+    bip32: {
+      public: 0x022d2533,
+      private: 0x0221312b
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0xd0,
+    wif: 0xd4,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   bithereum: {
     messagePrefix: '\x18Bithereum Signed Message:\n',
     bech32: 'bth',
