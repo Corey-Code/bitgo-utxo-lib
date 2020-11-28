@@ -173,6 +173,27 @@ module.exports = {
     coin: coins.BCH,
     hashFunctions: hashFunctions
   },
+  litecoinz: {
+    messagePrefix: '\x18LitecoinZ Signed Message:\n',
+    bech32: 'bc',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x0ab3,
+    scriptHash: 0x0ab8,
+    wif: 0x80,
+    // This parameter was introduced in version 3 to allow soft forks, for version 1 and 2 transactions we add a
+    // dummy value.
+    consensusBranchId: {
+      1: 0x00,
+      2: 0x00,
+      3: 0x5ba81b19,
+      4: 0xf5b9230b
+    },
+    coin: coins.ZEC,
+    hashFunctions: hashFunctions
+  },
   zcash: {
     messagePrefix: '\x18ZCash Signed Message:\n',
     bech32: 'bc',
@@ -189,7 +210,7 @@ module.exports = {
       1: 0x00,
       2: 0x00,
       3: 0x5ba81b19,
-      4: 0xf5b9230b
+      4: 0xe9ff75a6
     },
     coin: coins.ZEC,
     hashFunctions: hashFunctions
