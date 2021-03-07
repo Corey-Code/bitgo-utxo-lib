@@ -85,6 +85,18 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  "5gcash": {
+    messagePrefix: '\x185G-Cash Signed Message:\n',
+    bip32: {
+      public: 0x022d2533,
+      private: 0x0221312b
+    },
+    pubKeyHash: 0x0a, // https://github.com/5G-Cash/5G/blob/5799c7365d7655837d6e0f45dfce8dda69009566/src/chainparams.cpp#L191
+    scriptHash: 0x0b,
+    wif: 0xd2,
+    coin: coins.DASH,
+    hashFunctions: hashFunctions
+  },
   testnet: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bech32: 'tb',
