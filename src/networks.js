@@ -97,6 +97,18 @@ module.exports = {
     coin: coins.DASH,
     hashFunctions: hashFunctions
   },
+  simplesoftwaresolutions: {
+    messagePrefix: '\x18Simple Signed Message:\n',
+    bip32: {
+      public: 0x022d2533,
+      private: 0x0221312b
+    },
+    pubKeyHash: 0x3f, // https://github.com/Simple-Software-Solutions/SSS-Core/blob/d29a5328168c612d98877c52b951976e56478fe2/src/chainparams.cpp#L226
+    scriptHash: 0x13,
+    wif: 0x2e,
+    coin: coins.DASH,
+    hashFunctions: hashFunctions
+  },
   testnet: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bech32: 'tb',
