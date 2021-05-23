@@ -97,6 +97,30 @@ module.exports = {
     coin: coins.DASH,
     hashFunctions: hashFunctions
   },
+  realcoin: {
+    messagePrefix: '\x18RealCoin Signed Message:\n',
+    bip32: {
+      public: 0x022d2533,
+      private: 0x0221312b
+    },
+    pubKeyHash: 0x3c, // https://github.com/realcoin-rea/rea/blob/007dea995bca2a77a27f0e01c6493ed053b48551/src/chainparams.cpp#L186
+    scriptHash: 0x3d,
+    wif: 0xbc, // https://github.com/realcoin-rea/rea/blob/007dea995bca2a77a27f0e01c6493ed053b48551/src/chainparams.cpp#L188
+    coin: coins.DASH,
+    hashFunctions: hashFunctions
+  },
+  frenchdigital: {
+    messagePrefix: '\x18French Digital Reserve Signed Message:\n',
+    bip32: {
+      public: 0x022d2523,
+      private: 0x0221311b
+    },
+    pubKeyHash: 0x5f, // https://github.com/fdreserve/fdr-blockchain/blob/2db358b0c3fa9196e7c1b63d6645e55e6a6acb7b/src/chainparams.cpp#L162
+    scriptHash: 0x5c,
+    wif: 0x61, // https://github.com/fdreserve/fdr-blockchain/blob/2db358b0c3fa9196e7c1b63d6645e55e6a6acb7b/src/chainparams.cpp#L164
+    coin: coins.DASH,
+    hashFunctions: hashFunctions
+  },
   simplesoftwaresolutions: {
     messagePrefix: '\x18Simple Signed Message:\n',
     bip32: {
