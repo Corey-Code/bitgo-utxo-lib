@@ -237,7 +237,7 @@ module.exports = {
       1: 0x00,
       2: 0x00,
       3: 0x5ba81b19,
-      4: 0xf5b9230b
+      4: 0x76b809bb //https://github.com/litecoinz-core/litecoinz/blob/8b9aa0e4a0f0aac48b4a9299c48b63305f709242/src/consensus/upgrades.cpp#L29
     },
     coin: coins.ZEC,
     hashFunctions: hashFunctions
