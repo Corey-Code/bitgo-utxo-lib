@@ -648,6 +648,19 @@ module.exports = {
     coin: coins.BTC,	
     hashFunctions: hashFunctions	
   },	
+  dynamo: {	
+    messagePrefix: '\x19Dynamo Signed Message:\n',
+    bech32: "dy",
+    bip32: {	
+      public: 0x0488b21e,	
+      private: 0x0488ade4	
+    },	
+    pubKeyHash: 0x00, // https://github.com/dynamofoundation/dynamo-core/blob/2992e41077d16a453b89f7156b2383db12502d8d/src/chainparams.cpp#L182	
+    scriptHash: 0x05,	
+    wif: 0x80,	
+    coin: coins.BTC,	
+    hashFunctions: hashFunctions	
+  },
   digibyte: {	
     messagePrefix: '\x19Digibyte Signed Message:\n',
     bech32: "dgb",
