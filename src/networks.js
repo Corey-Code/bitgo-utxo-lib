@@ -648,6 +648,20 @@ module.exports = {
     coin: coins.BTC,	
     hashFunctions: hashFunctions	
   },	
+  dogecash: {	
+    messagePrefix: '\x19Dogecash Signed Message:\n',	
+    bip32: {	
+      public: 0x022d2533,	
+      private: 0x0221312b	
+    },	
+    pubKeyHash: 0x1e, 	
+    scriptHash: 0x13,	
+    // https://github.com/dogecash/dogecash/blob/9c83bb764d05b18225a43fc977fededa074cf7b1/src/chainparams.cpp#L269
+    // convert decimal to hex
+    wif: 0x7a,
+    coin: coins.BTC,	
+    hashFunctions: hashFunctions	
+  },	
   dynamo: {	
     messagePrefix: '\x19Dynamo Signed Message:\n',
     bech32: "dy",
