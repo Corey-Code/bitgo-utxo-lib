@@ -208,6 +208,20 @@ module.exports = {
     forkId: 0x00,
     hashFunctions: hashFunctions
   },
+  bitcoincandy: {
+    messagePrefix: '\x18BitcoinCandy Signed Message:\n',
+    bech32: 'cdy',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x1c, // C
+    scriptHash: 0x58, // c
+    wif: 0x80,
+    coin: coins.BCH,
+    forkId: 0x00,
+    hashFunctions: hashFunctions
+  },
   bitcoincashTestnet: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bech32: 'tb',
