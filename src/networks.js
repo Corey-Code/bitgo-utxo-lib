@@ -613,6 +613,30 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  meowcoin: {
+    messagePrefix: "\x18Meowcoin Signed Message: \n",
+    bip32: {
+      public:  0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x32,
+    scriptHash: 0x7a,
+    wif: 0x70,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
+  raptoreum: {
+    messagePrefix: "\x18Raptoreum Signed Message: \n",
+    bip32: {
+      public:  0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x3c,
+    scriptHash: 0x10,
+    wif: 0x80,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   bitcore: {
     messagePrefix: "\x18Bitcore Signed Message: \n",
     bech32: "btx", // not known
