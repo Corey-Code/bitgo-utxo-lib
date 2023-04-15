@@ -613,6 +613,19 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  neoxachain: {
+    messagePrefix: "\x18Neoxa Signed Message: \n",
+    // bech32: "rvn", // not known
+    bip32: {
+      public:  0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x26,
+    scriptHash: 0x7,
+    wif: 0x70,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   meowcoin: {
     messagePrefix: "\x18Meowcoin Signed Message: \n",
     bip32: {
