@@ -220,7 +220,7 @@ module.exports = {
     scriptHash: 0x58, // c
     wif: 0x80,
     coin: coins.BCH,
-    forkId: 0x28,
+    forkId: 0x6F,  // 111
     hashFunctions: hashFunctions
   },
   bitcoincashTestnet: {
