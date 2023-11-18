@@ -613,6 +613,19 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  frencoin: {
+    messagePrefix: "\x18Frencoin Signed Message: \n",
+    bech32: "rvn", // not known
+    bip32: {
+      public:  0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x23,
+    scriptHash: 0x5f,
+    wif: 0x80,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   neurai: {
     messagePrefix: "\x18Neurai Signed Message: \n",
     bip32: {
