@@ -613,6 +613,19 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  ravencoinclassic: {
+    messagePrefix: "\x18Ravencoin Classic Signed Message: \n",
+    bech32: "rvn", // not known
+    bip32: {
+      public:  0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x3c,
+    scriptHash: 0x7a,
+    wif: 0x80,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   satoxcoin: {
     messagePrefix: "\x18Satoxcoin Signed Message: \n",
     bech32: "", // not known
