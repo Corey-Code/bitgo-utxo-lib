@@ -417,7 +417,7 @@ module.exports = {
       1: 0x00,
       2: 0x00,
       3: 0x6f76727a,
-      4: 0x7361707a
+      4: 0x2bb40e60
     },
     coin: coins.ZEC,
     hashFunctions: hashFunctions
