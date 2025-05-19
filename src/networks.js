@@ -713,6 +713,18 @@ module.exports = {
     coin: coins.BTC,
     hashFunctions: hashFunctions
   },
+  cloreaiTestnet: {
+    messagePrefix: "\x18Clore Testnet Signed Message: \n",
+    bip32: {
+      public:  0x043587cf,
+      private: 0x04358394,
+    },
+    pubKeyHash: 0x2a,
+    scriptHash: 0x7c,
+    wif: 0x72,
+    coin: coins.BTC,
+    hashFunctions: hashFunctions
+  },
   bitcore: {
     messagePrefix: "\x18Bitcore Signed Message: \n",
     bech32: "btx", // not known
